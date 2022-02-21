@@ -34,7 +34,8 @@
 
 body,
 html,
-div {
+div,
+h1 {
     margin : 0px;
     padding: 0px;
 }
@@ -127,13 +128,64 @@ div {
     display: none;
 }
 
-.section-hero {
+main {
+    display       : flex;
+    padding       : 3rem;
+    gap           : 3rem;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.section {
+    display                   : flex;
+    width                     : 100%;
+    align-items               : center;
+    height                    : 35rem;
+    color                     : #FFFFFF;
+    border-radius             : 10px;
+    transition                : all 0.3s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
+}
+
+.section-content {
+    position                  : relative;
     display                   : flex;
     align-items               : center;
-    justify-content           : center;
-    height                    : 45rem;
-    background-color          : #000000;
-    color                     : #FFFFFF;
+    padding-left              : 6rem;
+    width                     : 60%;
+    height                    : 100%;
+    border-radius             : 10px 0 0 10px;
+    left                      : 0;
+    top                       : 0;
+    bottom                    : 0;
+    background                : linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    transition                : all 0.3s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
+}
+
+.title-group {
+    user-select   : none;
+    display       : flex;
+    align-items   : flex-start;
+    flex-direction: column;
+    word-break    : break-word;
+    color         : #FFFFFF;
+    text-shadow   : -2px 7px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-family               : "avenir-black";
+    font-size                 : 4rem;
+    font-weight               : bold;
+    word-break                : keep-all;
+    transition                : all 0.3s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
+}
+
+.subtitle {
+    font-family               : "avenir-medium";
+    font-size                 : 2rem;
+    font-weight               : normal;
     transition                : all 0.3s;
     transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
 }
@@ -160,8 +212,30 @@ div {
         opacity         : 0;
     }
 
+    main {
+        padding: 1rem;
+        gap    : 1rem;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
     .section-hero {
         height: 40rem;
+    }
+
+    .section-content {
+        width          : 100%;
+        height         : 100%;
+        padding-left   : 0;
+        justify-content: center;
+        border-radius  : 10px;
+        background     : linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
     }
 
     .navigation-expand {

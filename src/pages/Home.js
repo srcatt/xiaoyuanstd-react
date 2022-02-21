@@ -1,7 +1,12 @@
 export default function Home() {
     return (
-        <section className="section-hero">
-            <h1>XiaoYuanStudio欢迎您</h1>
+        <section className="section section-hero">
+            <div className="section-content">
+                <div className="title-group">
+                    <h1 className="subtitle">隆重介绍</h1>
+                    <h1 className="title">插入产品名</h1>
+                </div>
+            </div>
         </section>
     )
 }
