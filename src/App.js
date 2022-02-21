@@ -16,7 +16,7 @@ export default function App() {
                 <Router>
                     <Routes>
                         <Route path="/" element={Home()} />
-                        <Route path="/malwares" element={<a>还没写（</a>} />
+                        <Route path="/malwares" element={<h1>还没写（</h1>} />
                     </Routes>
                 </Router>
             </main>
