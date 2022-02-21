@@ -17,6 +17,7 @@ export default function App() {
                     <Routes>
                         <Route path="/" element={Home()} />
                         <Route path="/malwares" element={<h1>还没写（</h1>} />
+                        <Route path="/jiyusb" element={<h1>jiyusb :noice:</h1>} />
                     </Routes>
                 </Router>
             </main>
