@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: "avenir-book";
+    src        : url("./fonts/avenir-book.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "avenir-medium";
+    src        : url("./fonts/avenir-medium.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: "avenir-black";
+    src        : url("./fonts/avenir-black.ttf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: "avenir-heavy";
+    src        : url("./fonts/avenir-heavy.ttf");
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+    width : 10px;
+    height: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background   : rgb(193, 193, 193);
+}
+
+body,
+html,
+div {
+    margin : 0px;
+    padding: 0px;
+}
+
+.flex-expand {
+    flex-grow: 1;
+}
+
+.navigation {
+    position                  : sticky;
+    display                   : flex;
+    top                       : 0;
+    left                      : 0;
+    right                     : 0;
+    padding-left              : 10%;
+    padding-right             : 10%;
+    background-color          : #FFFFFF;
+    z-index                   : 9999;
+    user-select               : none;
+    box-shadow                : 0 0 50px rgba(0, 0, 0, 0.1);
+    transition                : all 0.3s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
+}
+
+.navigation-title {
+    display                   : flex;
+    align-items               : center;
+    justify-content           : center;
+    background-color          : #0085D2;
+    padding-left              : 1rem;
+    padding-right             : 1rem;
+    height                    : 3.5rem;
+    color                     : #FFFFFF;
+    font-family               : "avenir-black";
+    font-size                 : larger;
+    text-decoration           : none;
+    transition                : all 0.3s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
+}
+
+.navigation-title:hover {
+    padding-left : 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.navigation-title:active {
+    padding-left : 1rem;
+    padding-right: 1rem;
+}
+
+#navigation-btn-group {
+    display                   : flex;
+    transition                : all 0.3s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
+}
+
+#navigation-btn-group[data-expand='true'] {
+    left   : 0;
+    opacity: 1;
+}
+
+.navigation-btn {
+    display                   : flex;
+    padding                   : 1rem;
+    height                    : calc(100% - 2rem);
+    align-items               : center;
+    justify-content           : center;
+    font-family               : "avenir-medium";
+    text-decoration           : none;
+    color                     : #000000;
+    transition                : all 0.3s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
+}
+
+.navigation-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-btn:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navigation-btn-selected,
+.navigation-btn-selected:hover,
+.navigation-btn-selected:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-expand {
+    display: none;
+}
+
+.section-hero {
+    display                   : flex;
+    align-items               : center;
+    justify-content           : center;
+    height                    : 45rem;
+    background-color          : #000000;
+    color                     : #FFFFFF;
+    transition                : all 0.3s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
+}
+
+@media screen and (max-width: 750px) {
+    .navigation {
+        padding-left : 0;
+        padding-right: 0;
+    }
+
+    .navigation-btn {
+        height: auto;
+    }
+
+    #navigation-btn-group {
+        flex-direction  : column;
+        position        : fixed;
+        left            : 100%;
+        top             : 3.5rem;
+        width           : 100%;
+        height          : calc(100% - 3.5rem);
+        bottom          : 0;
+        background-color: #FFFFFF;
+        opacity         : 0;
+    }
+
+    .section-hero {
+        height: 40rem;
+    }
+
+    .navigation-expand {
+        display: flex;
+    }
 }
