@@ -4,7 +4,7 @@ export default function Home() {
             <div className="section-content">
                 <div className="title-group">
                     <h1 className="subtitle">隆重介绍</h1>
-                    <h1 className="title">插入产品名</h1>
+                    <h1 className="title">Title Here</h1>
                 </div>
             </div>
         </section>

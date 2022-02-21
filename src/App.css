@@ -147,6 +147,10 @@ main {
     transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
 }
 
+.section-hero{
+    background-image: url('../public/images/JiyuUnlocker/1.png');
+}
+
 .section-content {
     position                  : relative;
     display                   : flex;
