@@ -155,7 +155,7 @@ main {
 }
 
 .section-hero {
-    background-image   : url('../public/images/JiyuUnlocker/1.png');
+    background-image   : url('./JiyuUnlocker/1.png');
     background-size    : cover;
     background-position: center;
     background-repeat  : no-repeat;
