@@ -5,7 +5,7 @@ export default function Navbar() {
                 XiaoYuanStudio
             </a>
             <div id="navigation-btn-group" data-expand="false">
-                <a className="navigation-btn" href="/malwares">
+                <a className="navigation-btn" href="/softwares">
                     软件
                 </a>
                 <a className="navigation-btn" href="/malwares">

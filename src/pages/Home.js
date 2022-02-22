@@ -1,12 +1,13 @@
 export default function Home() {
     return (
         <section className="section section-hero">
-            <div className="section-content">
+            <a className="section-content" href="/softwares/jiyu">
                 <div className="title-group">
                     <h1 className="subtitle">隆重介绍</h1>
-                    <h1 className="title">Title Here</h1>
+                    <h1 className="title">极域反控助手</h1>
+                    <h1 className="subtitle">让你的信息课不再孤单</h1>
                 </div>
-            </div>
+            </a>
         </section>
     )
 }
