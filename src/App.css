@@ -131,8 +131,8 @@ h1 {
 .footer-content {
     width         : 100% !important;
     border-radius : 10px !important;
-    background    : #000000 !important;
-    padding-top   : 5% !important;
+    padding-top   : rgb(0 56 90) !important;
+    color         : #FFFFFF !important;
     padding-bottom: 5% !important;
 }
 
