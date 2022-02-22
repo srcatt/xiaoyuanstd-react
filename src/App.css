@@ -124,7 +124,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.navigation-expand {
+#navigation-expand {
     display: none;
 }
 
@@ -245,11 +245,11 @@ main {
     }
 
     .title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .subtitle {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .section-hero {
@@ -266,7 +266,7 @@ main {
         background     : linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
     }
 
-    .navigation-expand {
+    #navigation-expand {
         display: flex;
     }
 }

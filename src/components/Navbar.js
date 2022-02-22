@@ -1,6 +1,16 @@
-import React from "react";
+import { React } from "react";
 
 export default function Navbar() {
+    function ExpandDrawer() {
+        const navigationBtnGroup = document.getElementById('navigation-btn-group');
+        if (navigationBtnGroup.dataset.expand === "false") {
+            navigationBtnGroup.dataset.expand = "true";
+        } else {
+            navigationBtnGroup.dataset.expand = "false";
+        }
+    };
+
+
     return (
         <header className="navigation">
             <a className="navigation-title" href="/">
@@ -18,7 +28,7 @@ export default function Navbar() {
                 </a>
             </div>
             <div className="flex-expand"></div>
-            <div className="navigation-btn navigation-expand">
+            <div className="navigation-btn" id="navigation-expand" onClick={ExpandDrawer}>
                 <img src={process.env.PUBLIC_URL + "/images/actions/menu.svg"} alt="Menu"></img>
             </div>
         </header>
