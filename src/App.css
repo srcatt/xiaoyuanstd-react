@@ -216,6 +216,7 @@ main {
 	align-items: flex-start;
 	flex-direction: column;
 	word-break: break-word;
+	text-align: center;
 	text-shadow: -2px 7px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -236,7 +237,7 @@ main {
 	transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
 	.navigation {
 		padding-left: 0;
 		padding-right: 0;
@@ -263,6 +264,11 @@ main {
 		gap: 1.5rem;
 	}
 
+	.title-group {
+		align-items: center;
+		justify-content: center;
+	}
+
 	.title {
 		font-size: 3rem;
 	}
@@ -272,7 +278,7 @@ main {
 	}
 
 	.section-hero {
-		height: 25rem;
+		height: 20rem;
 	}
 
 	.section-content,
