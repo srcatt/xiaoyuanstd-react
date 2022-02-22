@@ -259,8 +259,8 @@ main {
 	}
 
 	main {
-		padding: 2rem;
-		gap: 2rem;
+		padding: 1rem;
+		gap: 1.5rem;
 	}
 
 	.title {
@@ -292,6 +292,10 @@ main {
 }
 
 @media screen and (max-width: 450px) {
+	.title {
+		font-size: 2.5rem;
+	}
+
 	.subtitle {
 		font-size: 1rem;
 	}
