@@ -6,7 +6,7 @@ export default function Home() {
 				<div className="title-group" style={{ color: '#ffffff' }}>
 					<h1 className="subtitle">隆重介绍</h1>
 					<h1 className="title">极域反控助手</h1>
-					<h1 className="subtitle">让你的信息课不再孤单</h1>
+					<h1 className="subtitle">让你的信息课不再被拘束。</h1>
 				</div>
 			</a>
 		</section>
