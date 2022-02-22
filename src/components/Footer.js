@@ -3,7 +3,7 @@ export default function Footer() {
 		<div className="footer section">
 			<div className="section-content footer-content">
 				<div className="title-group">
-					<h1 className="subtitle">Webpage designed by rsodxd.</h1>
+					<h1 className="subtitle">Webpage designed by rsodxd & LiChen.</h1>
 				</div>
 			</div>
 		</div>
