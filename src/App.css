@@ -137,11 +137,13 @@ h1 {
 }
 
 main {
-    display       : flex;
-    padding       : 3rem;
-    gap           : 3rem;
-    flex-direction: column;
-    align-items   : center;
+    display                   : flex;
+    padding                   : 3rem;
+    gap                       : 3rem;
+    flex-direction            : column;
+    align-items               : center;
+    transition                : all 0.3s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
 }
 
 .section {
@@ -155,7 +157,7 @@ main {
 }
 
 .section-hero {
-    background-image   : url('./JiyuUnlocker/1.png');
+    background-image   : url('./JiyuTaken/1.png');
     background-size    : cover;
     background-position: center;
     background-repeat  : no-repeat;
@@ -238,8 +240,8 @@ main {
     }
 
     main {
-        padding: 1rem;
-        gap    : 1rem;
+        padding: 2rem;
+        gap    : 2rem;
     }
 
     .title {

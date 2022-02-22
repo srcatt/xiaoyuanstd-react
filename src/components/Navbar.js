@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Navbar() {
     return (
         <header className="navigation">
@@ -17,7 +19,7 @@ export default function Navbar() {
             </div>
             <div className="flex-expand"></div>
             <div className="navigation-btn navigation-expand">
-                <img src="./images/actions/menu.svg" alt="Menu"></img>
+                <img src={process.env.PUBLIC_URL + "/images/actions/menu.svg"} alt="Menu"></img>
             </div>
         </header>
     )
