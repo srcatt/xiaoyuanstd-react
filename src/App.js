@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Softwares from './pages/Softwares';
+import Jiyu from './pages/Softwares/Jiyu';
 import Malwares from './pages/Malwares';
 import LCVirus from './pages/Malwares/LCVirus';
 
@@ -19,7 +20,7 @@ export default function App() {
 						<Route path="/" element={Home()} />
 						<Route path="/about" element={<h1>关于页</h1>} />
 						<Route path="/softwares" element={Softwares()} />
-						<Route path="/softwares/jiyu" element={<h1>恭喜你，这一页还没写好。</h1>} />
+						<Route path="/softwares/jiyu" element={Jiyu()} />
 						<Route path="/malwares" element={Malwares()} />
 						<Route path="/malwares/lcvirus" element={LCVirus()} />
 						<Route path="*" element={NotFound()} />
