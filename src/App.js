@@ -10,6 +10,7 @@ import Jiyu from './pages/Softwares/Jiyu';
 import TaskMgrPlus from './pages/Softwares/TaskMgrPlus';
 import Malwares from './pages/Malwares';
 import LCVirus from './pages/Malwares/LCVirus';
+import Rick from './images/Rick.mp4';
 
 export default function App() {
 	return (
@@ -34,6 +35,7 @@ export default function App() {
 								</div>
 							}
 						/>
+						<Route path="/rick" element={<video src={Rick} autoPlay loop controls></video>} />
 						<Route path="*" element={NotFound()} />
 					</Routes>
 				</Router>
