@@ -1,6 +1,6 @@
 import React from 'react';
 import JiyuTaken1 from '../../images/JiyuTaken/1.png';
-import JiyuTakenVid1 from '../../images/JiyuTaken/1.mp4'
+import JiyuTakenVid1 from '../../images/JiyuTaken/1.mp4';
 
 export default function Jiyu() {
 	return (
@@ -27,11 +27,11 @@ export default function Jiyu() {
 					<h1 className="title">集与一身</h1>
 					<h1 className="subtitle">方便快捷。</h1>
 				</div>
-				<div className='media-content'>
+				<div className="media-content">
 					<video src={JiyuTakenVid1} autoPlay loop muted></video>
 				</div>
 				<div className="title-group" style={{ color: 'rgb(0, 56, 90)' }}>
-					<h1 className="subtitle">inset text</h1>
+					<h1 className="subtitle">insert text</h1>
 				</div>
 			</section>
 		</React.Fragment>
