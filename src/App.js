@@ -54,8 +54,8 @@ export default function App() {
 						<Route path="*" element={NotFound()} />
 					</Routes>
 				</Router>
-				<Footer />
 			</main>
+			<Footer />
 		</React.Fragment>
 	);
 }
