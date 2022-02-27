@@ -33,7 +33,10 @@ export default function App() {
 									<h1 className="title">该内容尚未准备。</h1>
 									<h1 className="subtitle">该网站处于开发阶段，请等待程序猿把这个坑填平。</h1>
 									<h1 className="subtitle">
-										开发进度可在<a href="/rick">这里</a>查看。
+										开发进度可在<a
+										 href="/rick" 
+										 className='a_decoration'
+										 style={{ color : 'orange' }}>这里</a>查看。
 									</h1>
 								</div>
 							}
