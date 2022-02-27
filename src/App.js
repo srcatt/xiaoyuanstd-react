@@ -12,6 +12,14 @@ import Malwares from './pages/Malwares';
 import LCVirus from './pages/Malwares/LCVirus';
 import Rick from './images/Rick.mp4';
 
+console.log("\n每一个星球都有一个驱动核心,",
+"\n每一种思想都有影响力的种子",
+"\n感受世界的温度,",
+"\n年轻的你也能成为改变世界的动力,",
+"\n我们珍惜你所有的潜力",
+"\n你的潜力,",
+"是改变世界的动力!\n\n");
+console.log("\n%c小源工作室2022招聘简历投递: https://wj.qq.com/s2/9765478/b490","color:red");
 export default function App() {
 	return (
 		<React.Fragment>
