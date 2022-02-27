@@ -28,7 +28,6 @@ export default function App() {
 				<Router>
 					<Routes>
 						<Route path="/" element={Home()} />
-						<Route path="/about" element={<h1>关于页</h1>} />
 						<Route path="/softwares" element={Softwares()} />
 						<Route path="/softwares/jiyu" element={Jiyu()} />
 						<Route path="/softwares/taskmgr" element={TaskMgrPlus()} />
