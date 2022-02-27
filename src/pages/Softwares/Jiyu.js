@@ -1,6 +1,6 @@
 import React from 'react';
 import JiyuTaken1 from '../../images/JiyuTaken/1.png';
-import JiyuTaken2 from '../../images/JiyuTaken/2.png';
+import JiyuTakenVid1 from '../../images/JiyuTaken/1.mp4'
 
 export default function Jiyu() {
 	return (
@@ -22,13 +22,17 @@ export default function Jiyu() {
 					</div>
 				</a>
 			</section>
-			<section className="section section-hero" style={{ backgroundImage: 'url(' + JiyuTaken2 + ')' }}>
-				<a className="section-content section-content-mini" href="/unready">
-					<div className="title-group" style={{ color: '#ffffff' }}>
-						<h1 className="title">观看宣传片</h1>
-						<h1 className="subtitle">用之前先看一眼。</h1>
-					</div>
-				</a>
+			<section className="section verticle">
+				<div className="title-group" style={{ color: 'rgb(0, 56, 90)' }}>
+					<h1 className="title">集与一身</h1>
+					<h1 className="subtitle">方便快捷。</h1>
+				</div>
+				<div className='media-content'>
+					<video src={JiyuTakenVid1} autoPlay loop muted></video>
+				</div>
+				<div className="title-group" style={{ color: 'rgb(0, 56, 90)' }}>
+					<h1 className="subtitle">inset text</h1>
+				</div>
 			</section>
 		</React.Fragment>
 	);
