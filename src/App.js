@@ -9,20 +9,18 @@ import Softwares from './pages/Softwares';
 import Jiyu from './pages/Softwares/Jiyu';
 import TaskMgrPlus from './pages/Softwares/TaskMgrPlus';
 import Malwares from './pages/Malwares';
-import LCVirus from './pages/Malwares/LCVirus';
 import Rick from './images/Rick.mp4';
 
 export default function App() {
 	console.log(
-		'\n每一个星球都有一个驱动核心,',
+		'\n每一个星球都有一个驱动核心，',
 		'\n每一种思想都有影响力的种子',
-		'\n感受世界的温度,',
-		'\n年轻的你也能成为改变世界的动力,',
+		'\n感受世界的温度，',
+		'\n年轻的你也能成为改变世界的动力，',
 		'\n我们珍惜你所有的潜力',
-		'\n你的潜力,是改变世界的动力!'
+		'\n你的潜力,是改变世界的动力！'
 	);
 	console.log('\n%c小源工作室招聘问卷：https://wj.qq.com/s2/9765478/b490', 'color: red');
-	console.log('\n%c感谢百度', 'text-decoration: line-through');
 	return (
 		<React.Fragment>
 			<Navbar />
@@ -35,7 +33,6 @@ export default function App() {
 						<Route path="/softwares/jiyu" element={Jiyu()} />
 						<Route path="/softwares/taskmgr" element={TaskMgrPlus()} />
 						<Route path="/malwares" element={Malwares()} />
-						<Route path="/malwares/lcvirus" element={LCVirus()} />
 						<Route
 							path="/unready"
 							element={
@@ -44,7 +41,7 @@ export default function App() {
 									<h1 className="subtitle">该网站处于开发阶段，请等待程序猿把这个坑填平。</h1>
 									<h1 className="subtitle">
 										开发进度可在
-										<a href="/rick" className="a_decoration" style={{ color: 'orange' }}>
+										<a href="/rick" style={{ color: 'orange', textDecoration: 'none' }}>
 											这里
 										</a>
 										查看。
