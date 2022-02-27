@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Softwares from './pages/Softwares';
 import Jiyu from './pages/Softwares/Jiyu';
+import JiyuBC from './pages/Softwares/JiyuBC';
 import TaskMgrPlus from './pages/Softwares/TaskMgrPlus';
 import Malwares from './pages/Malwares';
 import Rick from './images/Rick.mp4';
@@ -30,6 +31,7 @@ export default function App() {
 						<Route path="/" element={Home()} />
 						<Route path="/softwares" element={Softwares()} />
 						<Route path="/softwares/jiyu" element={Jiyu()} />
+						<Route path="/softwares/jiyubc" element={JiyuBC()} />
 						<Route path="/softwares/taskmgr" element={TaskMgrPlus()} />
 						<Route path="/malwares" element={Malwares()} />
 						<Route
