@@ -10,7 +10,6 @@ import Jiyu from './pages/Softwares/Jiyu';
 import JiyuBC from './pages/Softwares/JiyuBC';
 import TaskMgrPlus from './pages/Softwares/TaskMgrPlus';
 import Malwares from './pages/Malwares';
-import Rick from './images/Rick.mp4';
 
 export default function App() {
 	console.log(
@@ -40,17 +39,9 @@ export default function App() {
 								<div className="title-group centered" style={{ color: 'rgb(0, 56, 90)' }}>
 									<h1 className="title">该内容尚未准备。</h1>
 									<h1 className="subtitle">该网站处于开发阶段，请等待程序猿把这个坑填平。</h1>
-									<h1 className="subtitle">
-										开发进度可在
-										<a href="/rick" style={{ color: 'orange', textDecoration: 'none' }}>
-											这里
-										</a>
-										查看。
-									</h1>
 								</div>
 							}
 						/>
-						<Route path="/rick" element={<video src={Rick} autoPlay loop controls></video>} />
 						<Route path="*" element={NotFound()} />
 					</Routes>
 				</Router>
