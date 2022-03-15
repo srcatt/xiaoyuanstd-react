@@ -30,7 +30,7 @@ export default function Softwares() {
 				<a className="section-content section-content-mini" href="/softwares/taskmgr">
 					<div className="title-group" style={{ color: '#ffffff' }}>
 						<h1 className="title">TaskMgr+</h1>
-						<h1 className="subtitle">打破传统。</h1>
+						<h1 className="subtitle">更好的任务管理器。</h1>
 					</div>
 				</a>
 			</section>

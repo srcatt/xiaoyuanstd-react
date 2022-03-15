@@ -7,7 +7,7 @@ export default function TaskMgrPlus() {
 		<React.Fragment>
 			<SoftPage
 				title="TaskMgr+"
-				desc="打破传统。"
+				desc="更好的任务管理器。"
 				dlimg={TaskMgrImg}
 				link="https://gitee.com/Leo0707/TaskMgrPlus/releases"
 			/>
