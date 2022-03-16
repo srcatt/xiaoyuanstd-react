@@ -21,7 +21,7 @@ export default function Softwares() {
 			<section className="section section-hero" style={{ backgroundImage: 'url(' + JiyuBC + ')' }}>
 				<a className="section-content section-content-mini" href="/softwares/jiyubc">
 					<div className="title-group" style={{ color: '#ffffff' }}>
-						<h1 className="title">极域电子动态壁纸</h1>
+						<h1 className="title">极域动态壁纸</h1>
 						<h1 className="subtitle">摸鱼的好办法。</h1>
 					</div>
 				</a>
