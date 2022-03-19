@@ -2,6 +2,7 @@ import { React } from 'react';
 import Apps from '@mui/icons-material/Apps';
 import BugReport from '@mui/icons-material/BugReport';
 import GitHub from '@mui/icons-material/GitHub';
+import Menu from '@mui/icons-material/Menu';
 
 export default function Navbar() {
 	function ExpandDrawer() {
@@ -34,7 +35,7 @@ export default function Navbar() {
 			</div>
 			<div className="flex-expand"></div>
 			<div className="navigation-btn" id="navigation-expand" onClick={ExpandDrawer}>
-				<img src={process.env.PUBLIC_URL + '/images/actions/menu.svg'} alt="Menu"></img>
+				<Menu />
 			</div>
 		</header>
 	);

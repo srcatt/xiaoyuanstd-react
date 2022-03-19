@@ -274,6 +274,10 @@ main {
 	transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
 }
 
+.subtitle-sub {
+	font-size: 1.5rem!important;
+}
+
 .team-card {
 	display: flex;
 	align-items: center;
@@ -297,6 +301,28 @@ main {
 .team-subtitle {
 	font-size: 2rem !important;
 	color: #ffffff !important;
+}
+
+.join-bg {
+	user-select: none;
+	display: flex;
+	position: relative;
+	border-radius: 10px;
+	background-position: center 0;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #ffffff;
+	padding: 2rem;
+	width: calc(100% - 4em);
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	transition: all 0.3s;
+	transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
+}
+
+.join-a {
+	text-decoration: none;
 }
 
 @media screen and (max-width: 850px) {

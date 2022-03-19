@@ -10,6 +10,7 @@ import Jiyu from './pages/Softwares/Jiyu';
 import JiyuBC from './pages/Softwares/JiyuBC';
 import TaskMgrPlus from './pages/Softwares/TaskMgrPlus';
 import Malwares from './pages/Malwares';
+import Join from './pages/Join';
 
 export default function App() {
 	console.log(
