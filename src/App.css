@@ -45,6 +45,10 @@ h1 {
 	padding: 0px;
 }
 
+html {
+	filter: grayscale(1);
+}
+
 .flex-expand {
 	flex-grow: 1;
 }
@@ -142,6 +146,8 @@ h1 {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 	padding-left: 3rem;
+	transition: all 0.3s;
+	transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
 }
 
 main {
@@ -303,28 +309,6 @@ main {
 	color: #ffffff !important;
 }
 
-.join-bg {
-	user-select: none;
-	display: flex;
-	position: relative;
-	border-radius: 10px;
-	background-position: center 0;
-	-o-background-size: cover;
-	background-size: cover;
-	color: #ffffff;
-	padding: 2rem;
-	width: calc(100% - 4em);
-	align-content: center;
-	justify-content: center;
-	flex-direction: column;
-	transition: all 0.3s;
-	transition-timing-function: cubic-bezier(0.18, 0.89, 0.5, 1);
-}
-
-.join-a {
-	text-decoration: none;
-}
-
 @media screen and (max-width: 850px) {
 	.navigation {
 		padding-left: 0;
@@ -347,6 +331,10 @@ main {
 		opacity: 0;
 	}
 
+	.footer {
+		padding-left: 0;
+	}
+
 	main {
 		padding: 1rem;
 		gap: 1.5rem;
@@ -363,6 +351,14 @@ main {
 
 	.subtitle {
 		font-size: 1.5rem;
+	}
+
+	.team-title {
+		font-size: 2rem !important;
+	}
+
+	.team-subtitle {
+		font-size: 1.5rem !important;
 	}
 
 	.section {
