@@ -10,7 +10,7 @@ export default function Home() {
 		<React.Fragment>
 			<Alert severity="info">
 				<AlertTitle>向所有在东航MU5735航班中遇难的人们默哀。</AlertTitle>
-				网站现已黑白。
+				网站现已灰色。
 			</Alert>
 			<section className="section section-hero" style={{ backgroundImage: 'url(' + Hero + ')' }}>
 				<a className="section-content" href="/softwares">
