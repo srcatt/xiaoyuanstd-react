@@ -1,6 +1,4 @@
 import React from 'react';
-import Alert from '@mui/material/Alert';
-import AlertTitle from '@mui/material/AlertTitle';
 import TeamCard from '../components/TeamCard';
 import Hero from '../images/JiyuTaken/1.png';
 import OpenSource from '../images/open-source.png';
@@ -8,10 +6,6 @@ import OpenSource from '../images/open-source.png';
 export default function Home() {
 	return (
 		<React.Fragment>
-			<Alert severity="info">
-				<AlertTitle>向所有在东航MU5735航班中遇难的人们默哀。</AlertTitle>
-				网站现已灰色。
-			</Alert>
 			<section className="section section-hero" style={{ backgroundImage: 'url(' + Hero + ')' }}>
 				<a className="section-content" href="/softwares">
 					<div className="title-group" style={{ color: '#ffffff' }}>

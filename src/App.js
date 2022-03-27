@@ -10,6 +10,8 @@ import Jiyu from './pages/Softwares/Jiyu';
 import JiyuBC from './pages/Softwares/JiyuBC';
 import TaskMgrPlus from './pages/Softwares/TaskMgrPlus';
 import Malwares from './pages/Malwares';
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
 
 export default function App() {
 	console.log(
@@ -25,6 +27,10 @@ export default function App() {
 		<React.Fragment>
 			<Navbar />
 			<main>
+				<Alert severity="info">
+					<AlertTitle>向所有在东航MU5735航班中遇难的人们默哀。</AlertTitle>
+					网站现已灰色。
+				</Alert>
 				<Router>
 					<Routes>
 						<Route path="/" element={Home()} />
