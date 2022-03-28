@@ -45,10 +45,6 @@ h1 {
 	padding: 0px;
 }
 
-html {
-	filter: grayscale(1);
-}
-
 .flex-expand {
 	flex-grow: 1;
 }
