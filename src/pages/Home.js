@@ -14,7 +14,7 @@ export default function Home() {
 				</a>
 			</section>
 			<section className="section section-hero" style={{ backgroundImage: 'url(' + Hero + ')' }}>
-				<a className="section-content section-content-mini" href="/softwares">
+				<a className="section-content section-content-mini" href="/team">
 					<div className="title-group" style={{ color: '#ffffff' }}>
 						<h1 className="title">关于我们</h1>
 						<h1 className="subtitle">在此处查看团队的简介。</h1>
