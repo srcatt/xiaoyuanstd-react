@@ -1,4 +1,4 @@
-export default function TeamCard({ avatar, name, role }) {
+export default function TeamCard({ avatar, name = 'username', role = 'role' }) {
 	return (
 		<div className="team-card">
 			<img className="team-card-img" src={'https://q1.qlogo.cn/g?b=qq&nk=' + avatar + '&s=640'} alt={name}></img>

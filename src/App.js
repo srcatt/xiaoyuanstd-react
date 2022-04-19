@@ -5,14 +5,19 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
+import Team from './pages/Team';
 import Softwares from './pages/Softwares';
 import Jiyu from './pages/Softwares/Jiyu';
-import JiyuBC from './pages/Softwares/JiyuBC';
 import TaskMgrPlus from './pages/Softwares/TaskMgrPlus';
 import Malwares from './pages/Malwares';
+import Collapse from '@mui/material/Collapse';
 import Alert from '@mui/material/Alert';
+import IconButton from '@mui/material/IconButton';
+import Close from '@mui/icons-material/Close';
+import LiquidIcon from './components/LiquidIcon';
 
 export default function App() {
+	const [alertOpen, setAlertOpen] = React.useState(true);
 	console.log(
 		'\n每一个星球都有一个驱动核心，',
 		'\n每一种思想都有影响力的种子',
@@ -26,15 +31,33 @@ export default function App() {
 		<React.Fragment>
 			<Navbar />
 			<main>
-				<Alert variant="filled" severity="info">
-					<strong>向所有在东航MU5735航班中遇难的人们默哀。</strong>
-				</Alert>
+				<Collapse in={alertOpen}>
+					<Alert
+						variant="filled"
+						severity="info"
+						icon={<LiquidIcon width="1em" />}
+						action={
+							<IconButton
+								color="inherit"
+								size="small"
+								onClick={() => {
+									setAlertOpen(false);
+								}}
+							>
+								<Close fontSize="inherit" />
+							</IconButton>
+						}
+					>
+						好东西，正在开发。
+					</Alert>
+				</Collapse>
+
 				<Router>
 					<Routes>
 						<Route path="/" element={Home()} />
+						<Route path="/team" element={Team()} />
 						<Route path="/softwares" element={Softwares()} />
 						<Route path="/softwares/jiyu" element={Jiyu()} />
-						<Route path="/softwares/jiyubc" element={JiyuBC()} />
 						<Route path="/softwares/taskmgr" element={TaskMgrPlus()} />
 						<Route path="/malwares" element={Malwares()} />
 						<Route

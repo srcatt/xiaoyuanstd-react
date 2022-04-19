@@ -24,8 +24,8 @@
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -33,7 +33,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	border-radius: 10px;
+	border-radius: 8px;
 	background: rgb(193, 193, 193);
 }
 
@@ -43,6 +43,11 @@ div,
 h1 {
 	margin: 0px;
 	padding: 0px;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .flex-expand {
@@ -84,11 +89,6 @@ h1 {
 .navigation-title:hover {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
-}
-
-.navigation-title:active {
-	padding-left: 1rem;
-	padding-right: 1rem;
 }
 
 #navigation-btn-group {
