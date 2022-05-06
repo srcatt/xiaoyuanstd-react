@@ -6,7 +6,7 @@ import Menu from '@mui/icons-material/Menu';
 import People from '@mui/icons-material/People';
 
 export default function Navbar() {
-	let [expand, setExpand] = React.useState(false)
+	let [expand, setExpand] = React.useState(false);
 	return (
 		<header className="navigation">
 			<a className="navigation-title" href="/">
@@ -31,7 +31,13 @@ export default function Navbar() {
 				</a>
 			</div>
 			<div className="flex-expand"></div>
-			<div className="navigation-btn" id="navigation-expand" onClick={() => { setExpand(!expand) }}>
+			<div
+				className="navigation-btn"
+				id="navigation-expand"
+				onClick={() => {
+					setExpand(!expand);
+				}}
+			>
 				<Menu />
 			</div>
 		</header>

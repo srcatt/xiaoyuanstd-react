@@ -16,11 +16,11 @@ export default function App() {
 	);
 	console.log('\n%c小源工作室招聘问卷：https://wj.qq.com/s2/9765478/b490', 'color: red');
 
-	const suffix = ' | XYStd'
+	const suffix = 'XYStd';
 	const DomTitle = ({ item }) => {
-		document.title = item.title + suffix
-		return item.component
-	}
+		document.title = item.title + ' | ' + suffix;
+		return item.component;
+	};
 
 	return (
 		<React.Fragment>
