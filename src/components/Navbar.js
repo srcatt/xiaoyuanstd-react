@@ -6,21 +6,13 @@ import Menu from '@mui/icons-material/Menu';
 import People from '@mui/icons-material/People';
 
 export default function Navbar() {
-	function ExpandDrawer() {
-		const navigationBtnGroup = document.getElementById('navigation-btn-group');
-		if (navigationBtnGroup.dataset.expand === 'false') {
-			navigationBtnGroup.dataset.expand = 'true';
-		} else {
-			navigationBtnGroup.dataset.expand = 'false';
-		}
-	}
-
+	let [expand, setExpand] = React.useState(false)
 	return (
 		<header className="navigation">
 			<a className="navigation-title" href="/">
 				XiaoYuanStudio
 			</a>
-			<div id="navigation-btn-group" data-expand="false">
+			<div id="navigation-btn-group" data-expand={expand}>
 				<a className="navigation-btn" href="/softwares">
 					<Apps />
 					软件
@@ -39,7 +31,7 @@ export default function Navbar() {
 				</a>
 			</div>
 			<div className="flex-expand"></div>
-			<div className="navigation-btn" id="navigation-expand" onClick={ExpandDrawer}>
+			<div className="navigation-btn" id="navigation-expand" onClick={() => { setExpand(!expand) }}>
 				<Menu />
 			</div>
 		</header>
